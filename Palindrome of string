@@ -1,19 +1,7 @@
 package Myworkspace;
 
 public class Palind {
-int n=1;
-void a(String name)
-{
-	//String name="String";
-	if(name.length()>=n)
-	{
-		System.out.println(name.charAt(name.length()-n));
-		n++;
-		a(name);
-	}
-	
-	
-}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String s="mdm";
@@ -33,11 +21,8 @@ void a(String name)
 		}
 if(!f)
 	System.out.println("palindrom");
-
-
-	Palind p=new Palind();
-	p.a("Hit" );
-
+		else
+			print("no");
 
 
 	}
