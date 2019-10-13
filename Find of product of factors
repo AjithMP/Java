@@ -1,4 +1,4 @@
-package Ajith;
+
 
 import java.util.*;
 
@@ -24,7 +24,7 @@ public class Hell {
 			}
 			n++;
 			if (counter == 5) {
-				System.out.println("AVlotha");
+				System.out.println("Finished");
 				break abc ;
 			}
 		}
