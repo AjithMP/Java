@@ -1,0 +1,44 @@
+package Ajith;
+
+import java.util.*;
+
+class Doubtt   {
+//collection map concept when duplicate found last value will be update
+	public static void main(String[] abc) {
+		int a[] = { 1, 3, 2, 3, 7, 9, 7, 11, 9, 11, 4, 0, 0, 0, 4, 9 };
+		TreeMap<Integer, Integer> ll = new TreeMap<Integer, Integer>();
+
+		for (int i = 0; i < a.length; i++) {
+			int count = 1;
+			for (int j = i + 1; j < a.length; j++) {
+				if (a[i] == a[j]) {
+					count = count + 1;
+					a[j] = -1;
+				}
+			}
+			if (a[i] != -1)
+				ll.put(a[i], count);
+		}
+		System.out.println(ll);
+		int b[]={1,2,3,4,5,3,2,1,4,5,6};
+		
+		TreeMap<Integer,Integer> tt=new TreeMap<Integer,Integer>();
+		for(int i=0;i<b.length;i++)
+		{
+			int countt=1;
+			for(int j=i+1;j<b.length;j++)
+			{
+				if(b[i]==b[j])
+				{
+					countt++;
+					b[j]=-1;
+					
+				}
+			}
+			if(b[i]!=-1)
+				ll.put(b[i],countt);
+			
+		}
+		System.out.println(ll);
+	}
+}
