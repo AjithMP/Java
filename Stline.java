@@ -1,0 +1,41 @@
+package Ajith;
+
+
+import java.util.*;
+
+import Myworkspace.arraydeclist;
+
+public class Stline {
+
+	
+	
+	
+
+	
+	
+	public static void main(String[] args) {
+		
+		int a[]={4,5,6,11,9,7,2,4,10,6};
+		
+		int k=12;
+		ArrayList al=new ArrayList();
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=i+1;j<a.length;j++)	
+			{
+			if(a[i]+a[j]==k)
+			{
+			
+			 al.add("("+a[i]+","+a[j]+")");
+			
+			 
+			}
+		
+			}
+		}
+		
+		System.out.println(al);
+
+	}
+ 
+}

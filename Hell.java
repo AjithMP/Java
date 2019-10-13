@@ -1,0 +1,33 @@
+package Ajith;
+
+import java.util.*;
+
+public class Hell {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = 1;
+		int product = 1;
+		int counter = 0;
+
+		abc: for (int i = n; i <= n; i++) {
+			int count = 0;
+			for (int j = 1; j <= n; j++) {
+				if (i % j == 0) {
+					count = count + 1;
+				}
+			}
+			if (count == 2) {
+				product = product * n;
+				System.out.println(product);
+				counter++;
+			}
+			n++;
+			if (counter == 5) {
+				System.out.println("AVlotha");
+				break abc ;
+			}
+		}
+	}
+
+}
