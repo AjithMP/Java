@@ -1,0 +1,45 @@
+package Myworkspace;
+
+import java.util.*;
+
+public class Liif {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string");
+		String s=sc.next();
+		System.out.println("Enter the number for split");
+		int n=sc.nextInt();
+int i=0,temp=0;
+if(n>s.length())
+{
+	System.out.println("Invalid Entry");
+}
+else
+{
+if(s.length()%n==0)//to find string eligible for exact split 
+{
+	while(i<s.length())
+	{
+	System.out.println(s.substring(i,i+n));
+	i=i+n;
+	}
+
+}
+else // if string is not fit to do exact split
+	
+{
+	temp=s.length()%n; //to get leftover string after split
+			
+	while(i<(s.length()-temp))	
+	{
+		System.out.println(s.substring(i,i+n));
+		i+=n;
+	}
+	System.out.println(s.substring(i,s.length()));//print left string
+		
+}
+}
+}
+}
